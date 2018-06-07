@@ -35,14 +35,15 @@
             android:orientation="vertical"
             android:layout_weight="0.2">
             <EditText
-                android:id="@+id/id_usuarioLogin"
+                android:id="@+id/emailLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
-                android:text="Login"/>
+                android:hint="E-mail"/>
+
             <EditText
-                android:text="Senha"
-                android:id="@+id/id_senhaLogin"
+                android:hint="Senha"
+                android:id="@+id/senhaLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"/>

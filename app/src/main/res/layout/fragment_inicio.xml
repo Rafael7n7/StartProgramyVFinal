@@ -2,20 +2,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/colorFundo">
+    android:background="@color/colorFundo"
+    android:orientation="vertical">
 
-    <ViewFlipper
-        android:id="@+id/v_flipper"
-        android:layout_width="match_parent"
-        android:layout_margin="10dp"
-        android:layout_height="150dp"></ViewFlipper>
-
-    <android.support.v7.widget.RecyclerView
-        android:layout_marginTop="10dp"
-        android:id="@+id/recyclerView_id_inicio"
+    <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-    </android.support.v7.widget.RecyclerView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ViewFlipper
+                android:id="@+id/v_flipper"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="10dp" />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView_id_inicio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
 
 </LinearLayout>

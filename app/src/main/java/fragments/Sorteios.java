@@ -132,10 +132,10 @@ public class Sorteios extends Fragment {
                 public void onClick(View v) {
 
 
-                  /**Intent i = new Intent(getActivity(), Empresa.class);
-                    i.putExtra("COD_CATEGORY", category.getId());
+                  Intent i = new Intent(getActivity(), Login.class);
+                    i.putExtra("COD_CATEGORY", ruffle.getId());
                     getActivity().startActivity(i);
-                **/}
+                }
             });
         }
 
